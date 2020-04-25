@@ -78,7 +78,10 @@ echo PREF.$lang['core']['instance'][$config['lang']].ORAN.$instance['i'].ENDC.PH
 
 # Logi
 if ($config['logs']) {
-    ini_set('error_log', 'logs/error_'.date('Y-m-d').'_log_'.$instance['i'].'.log');
+  if(!is_dir('logs')){
+    mkdir('logs', 0700);
+  } 
+  ini_set('error_log', 'logs/error_'.date('Y-m-d').'_log_'.$instance['i'].'.log');
 }
 error_reporting($config['errors']);
 
