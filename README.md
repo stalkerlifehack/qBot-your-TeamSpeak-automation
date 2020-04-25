@@ -1,2 +1,16 @@
-# qBot-your-TeamSpeak-automation
-Description coming soon
+Requirements/Wymagania
+ 1. php 7.2
+ 2. php7.2-cli
+ 3. php7.2-curl
+ 4. screen
+
+ Intalation/Instalacja
+ 1. cd qBot_v4.1
+ 2. chmod 0775 run 
+ 3. cp config.php.SAMPLE_EN config.php /  cp config.php.SAMPLE_PL config.php
+
+Commands/Komendy
+    ./run start
+    ./run stop
+    ./run restart
+    ./run daemon
