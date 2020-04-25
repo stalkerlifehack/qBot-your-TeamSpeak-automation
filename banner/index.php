@@ -13,6 +13,9 @@ date_default_timezone_set('Europe/Warsaw');
 error_reporting($config['errors']);
 
 if ($config['logs']) {
+    if(!is_dir('logs')){
+      mkdir('logs', 0700);
+    }
     ini_set('error_log', 'logs/error_'.date('Y-m-d').'log');
 }
 
