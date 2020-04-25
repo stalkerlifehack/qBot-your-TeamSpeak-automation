@@ -1,0 +1,117 @@
+#!/bin/bash
+# Skrypt stworzony przez Stalker
+# Zakaz kopiowania, sprzedawania oraz wykorzystywania do swoich aplikacji
+# Ts: Jutuby.Net
+
+function greenMessage {
+    echo -e "\\033[32;1m${@}\033[0m"
+}
+
+function redMessage {
+    echo -e "\\033[31;1m${@}\033[0m"
+}
+
+function yellowMessage {
+    echo -e "\\033[33;1m${@}\033[0m"
+}
+
+function blueMessage {
+    echo -e "\\033[34;1m${@}\033[0m"
+}
+
+if [ "$1" == "start" ];
+	then
+    echo -e '\033[33mStarting!'
+    for (( i=1; $i <= 5; i++ )) ; do
+  		if screen -ls | grep -q core$i;
+  		then
+        sleep 0.3
+  			redMessage "   - instance is already started! ($i)"
+  		else
+  			screen -AdmS core$i php core.php -i $i
+        sleep 0.3
+        if screen -ls | grep -q core$i;
+        then
+          sleep 0.00001
+        else
+           redMessage "   - instance was not started! Check the config file! ($i)"
+        fi
+  		fi
+    done
+    echo -e '\033[0m'
+
+
+
+
+
+
+
+elif [ "$1" == "stop" ];
+	then
+    if screen -ls | grep -q daemon;
+    then
+      redMessage "Firt turn off daemon!"
+    else
+      echo -e '\033[33mStopping!\033[0m'
+      for (( i=1; $i <= 5; i++ )) ; do
+    		if screen -ls | grep -q core$i;
+    		then
+    			screen -X -S core$i quit
+    		else
+    			redMessage "   - instance is already started! ($i)"
+    		fi
+        sleep 0.3
+      done
+    fi
+
+
+
+    ####################
+
+elif [ "$1" == "daemon" ];
+  then
+    if screen -ls | grep -q daemon;
+    then
+      screen -X -S daemon quit
+      screen -X -S core1 quit
+      screen -X -S core2 quit
+      screen -X -S core3 quit
+      screen -X -S core4 quit
+      screen -X -S core5 quit
+      redMessage 'Stopping daemon!'
+    else
+      screen -AdmS daemon ./run check
+      greenMessage "Starting daemon!"
+    fi
+
+elif [ "$1" == "check" ];
+then
+  while [ true ] ; do
+    for (( i=1; $i <= 5; i++ )) ; do
+      if screen -ls | grep -q core$i;
+      then
+        sleep 0.2
+        greenMessage "   - Instance is already started! ($i)"
+      else
+        screen -AdmS core$i php core.php -i $i
+        sleep 1
+        if screen -ls | grep -q core$i;
+        then
+          sleep 0.2
+        else
+           redMessage "   - error ($i)"
+        fi
+      fi
+    done
+    echo -e '\033[0m'
+    sleep 3
+  done
+
+
+
+else
+redMessage 'Usage: run start/stop/restart/daemon'
+fi
+#Script created by Stalker
+#Copying is forbidden
+#Ts: Jutuby.Net
