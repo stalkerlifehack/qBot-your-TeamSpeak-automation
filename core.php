@@ -287,18 +287,20 @@ if ($ts->connect()) {
           
 
           # if client join
-          if(array_key_exists('notifycliententerview', $client) && isset($enabled['joinServer'])){
+          if(array_key_exists('notifycliententerview', $client)){
 
             if($client['client_type'] == 0){
-              foreach($enabled['joinServer'] as $function => $value){
-                $clientInfo = $ts->clientInfo($client['clid']);
-                if($clientInfo['success']){
-                  @$$function->start(
-                   $ts, 
-                   $value, 
-                   array_merge($clientInfo['data'], ['clid' => $client['ctid'], 'clid' => $client['clid']]), 
-                   $lang[$function][$config['lang']]
-                  );
+              if(isset($enabled['joinServer'])){
+                foreach($enabled['joinServer'] as $function => $value){
+                  $clientInfo = $ts->clientInfo($client['clid']);
+                  if($clientInfo['success']){
+                    @$$function->start(
+                    $ts, 
+                    $value, 
+                    array_merge($clientInfo['data'], ['clid' => $client['ctid'], 'clid' => $client['clid']]), 
+                    $lang[$function][$config['lang']]
+                    );
+                  }
                 }
               }
               $cldbid[$client['clid']] = $client['client_database_id'];
@@ -317,11 +319,15 @@ if ($ts->connect()) {
           }
 
           # if client leave
+          
           if(array_key_exists('notifyclientleftview', $client)){
+           
             if(!empty($cldbid[$client['clid']])){
+              
               if(!array_key_exists('invokerid', $client) && isset($enabled['leftServer'])){
+                
                 foreach($enabled['leftServer'] as $function => $value){
-                  @$$function->start($ts, $cldbid[$client['clid']], $value, $lang[$function][$config['lang']]);
+                  @$$function->start($ts, $cldbid[$client['clid']], $value, $client, $lang[$function][$config['lang']]);
                 }
 
               }
