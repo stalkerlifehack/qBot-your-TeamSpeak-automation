@@ -10,7 +10,8 @@ Requirements/Wymagania
  3. mv qBot-your-TeamSpeak-automation-master qBot_v4.1
  4. cd qBot_v4.1
  5. chmod 0775 run 
- 6. cp config.php.SAMPLE_EN config.php /  cp config.php.SAMPLE_PL config.php
+ 6. cd inc/configs
+ 7. cp config.php.SAMPLE_EN config.php /  cp config.php.SAMPLE_PL config.php
 
 Commands/Komendy
     ./run start
