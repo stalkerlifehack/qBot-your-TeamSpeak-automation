@@ -3,7 +3,7 @@
 /**********************************************
 
          Plik: language.php
-              Autor: Stalker
+              Autor: Angel. & Stalker
               TS: Jutuby.Net
           Mail: kontakt@jutuby.net
 
@@ -218,6 +218,25 @@ $lang = [
      /*
           Functions
      */
+
+     'publicChannelGroup' =>[
+          'PL' => [
+               'msg1' => 'Wszedłeś/aś jako pierwszy/a na ten kanał, więc otrzymujesz channel admina!',
+               'msg2' => 'Obecny channel admin opuścił kanał, teraz ty przemujesz dowodzenie!',
+          ],
+          'EN' => [
+               'msg1' => 'You enter this channel first, so you got channel admin!',
+               'msg2' => 'The current channel admin has left the channel, now you are the commander!',
+          ]
+     ],
+     'publicChannelGroupHelper' => [
+          'PL' => [
+               'msg1' => 'Obecny channel admin opuścił kanał, teraz ty przemujesz dowodzenie!',
+          ],
+          'EN' => [
+               'msg1' => 'The current channel admin has left the channel, now you are the commander!',
+          ]
+     ],
      'channelGroupNotify' => [
           'PL' => [
                'pokeMessage' => 'Użytkownik [user] oczekuje Twojej pomocy!',
