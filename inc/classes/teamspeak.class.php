@@ -1,4 +1,13 @@
 <?php
+/**********************************************
+
+         Plik: qBteamspeakot.class.php.php
+              Autor: Stalker
+              TS: Jutuby.Net
+          Mail: kontakt@jutuby.net
+
+***********************************************/
+
 class teamspeak{
 
   public $runtime = [];
