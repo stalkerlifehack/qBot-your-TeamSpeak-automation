@@ -353,6 +353,19 @@ $config[1]['functions'] = [
   ],
 
   'changeChannel' => [
+    
+    /*
+        Funkcja nadająca grupę kanału, pierwszemu użytkownikowi, który wszedł na kanał publiczny
+        Ta funkcja wymaga włączonej funkcji 'publicChannelGroupHelper' 
+    */
+
+    'publicChannelGroup' => [
+      'enabled' => false,
+      'publicParentChannels' => [1912],
+      'channelAdminGroup' => 5,   # Ta grupa koniecznie musi mieć usunięte pozwolenie b_group_is_permanent
+      'defaultChannelGroup' => 8,   # Domyślna grupa kanału
+
+    ],
 
     /*
         Funckja zliczająca ilość udzielonej pomocy na centrum pomocy
@@ -595,6 +608,19 @@ $config[2]['functions'] = [
   ],
 
   'leftServer' => [
+
+    /*
+        Funkcja nadająca grupę kanału osobie siedzącej na kanale publicznym, jeśli dotychczasowy posiadacz grupy kanału sie rozłączył
+        Ta funkcja wymaga włączonej funkcji 'publicChannelGroupHelper'
+
+    */
+    'publicChannelGroupHelper' => [
+      'enabled' => false,
+      'publicParentChannels' => [1912],
+      'channelAdminGroup' => 5,   # Ta grupa koniecznie musi mieć usunięte pozwolenie b_group_is_permanent
+      'defaultChannelGroup' => 8,   # Domyślna grupa kanału
+    ]
+
     /*
         Funkcja zapisująca czas rozłączenia klienta z serwerem
         Ta funkcja jest wymagana przy używaniu funkcji "groupOnline" i "adminList"

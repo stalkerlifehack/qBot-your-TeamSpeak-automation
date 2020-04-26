@@ -351,6 +351,17 @@ $config[1]['functions'] = [
   'changeChannel' => [
 
     /*
+        A function that broadcasts the channel group to the first user who entered the public channel
+        This function require enabled 'publicChannelGroupHelper' 
+    */
+
+    'publicChannelGroup' => [
+      'enabled' => true,
+      'publicParentChannels' => [1912],
+      'channelAdminGroup' => 5,   # This group must have disabled permission b_group_is_permanent
+      'defaultChannelGroup' => 8,   # Default channel group
+
+    /*
         function counting amount of help in help center
     */
     'helpProvided' => [
@@ -591,6 +602,19 @@ $config[2]['functions'] = [
   ],
 
   'leftServer' => [
+
+    /*
+        A function that gives a channel group to a person sitting on a public channel, if the current holder of the channel group has hung up
+        This function require enabled 'publicChannelGroupHelper'
+
+    */
+    'publicChannelGroupHelper' => [
+      'enabled' => true,
+      'publicParentChannels' => [1912],
+      'channelAdminGroup' => 5,   # This group must have disabled this permission b_group_is_permanent
+      'defaultChannelGroup' => 8,   # Deafult channel group
+    ]
+
     /*
         function saving client left from server time
         Must be enabled when functions  "groupOnline" and "adminList" are enabled
