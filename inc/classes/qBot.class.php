@@ -416,7 +416,8 @@ class qBot
             'topAfkSpent.json',
             'topConnectedTime.json',
             'topConnections.json',
-            'topTimeSpent.json'
+            'topTimeSpent.json',
+            'saveClientChannel.json'
         ];
         return $files;
     }
