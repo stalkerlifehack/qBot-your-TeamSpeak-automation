@@ -16,5 +16,5 @@ Requirements/Wymagania
 Commands/Komendy
     ./run start
     ./run stop
-    ./run restart
+    ./run restart 
     ./run daemon
