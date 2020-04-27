@@ -23,7 +23,7 @@ if [ "$1" == "start" ];
 	then
     echo -e '\033[33mStarting!'
     for (( i=1; $i <= 5; i++ )) ; do
-  		if screen -ls | grep -q core$i;
+  		if screen -ls | grep -q core$i; 
   		then
         sleep 0.3
   			redMessage "   - instance is already started! ($i)"
