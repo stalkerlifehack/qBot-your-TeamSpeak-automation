@@ -32,7 +32,7 @@ define("MAG", "\e[95m");
 define("BLUE", "\e[34m");
 define("DARKRED", "\e[38;5;88m");
 
-echo DARKRED.
+echo DARKRED. 
 "                                   ____        _
                               __ _| __ )  ___ | |_
                              / _` |  _ \ / _ \| __|
