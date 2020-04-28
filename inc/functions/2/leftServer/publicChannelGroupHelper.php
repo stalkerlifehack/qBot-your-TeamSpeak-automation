@@ -16,9 +16,9 @@ class publicChannelGroupHelper
         
         if(in_array($ts->channelInfo($client['cfid'])['data']['pid'], $config['publicParentChannels'])){
             $data = json_decode(file_get_contents('cache/saveClientChannel.json'), true);
-            $ts->setClientChannelGroup($config['defaultChannelGroup'], $client['cfid'], $cldbid);
             unset($data[$client['cfid']][$cldbid]);
             file_put_contents('cache/saveClientChannel.json', json_encode($data));
+            $ts->setClientChannelGroup($config['defaultChannelGroup'], $client['cfid'], $cldbid);
 
 
             $channelList = $ts->channelClientList($client['cfid'])['data'];
