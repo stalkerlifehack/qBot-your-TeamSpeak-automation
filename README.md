@@ -1,9 +1,10 @@
 # Requirements/Wymagania
- 1. php 7.2
+ 1. minimum php 7.2
  2. php7.2-cli
  3. php7.2-curl
- 4. screen
- 5. apache2 (Dla baneru, ktory jest na tym samym vps/*When banner is on the same vps*)
+ 4. php7.2-mbstring
+ 5. screen
+ 6. apache2 (Dla baneru, ktory jest na tym samym vps/*When banner is on the same vps*)
 
 # Packet installation/Instalacja pakietów
 Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pierwszy i drugi  
@@ -37,7 +38,7 @@ $ apt-get update && apt-get upgrade -y
   *(Instalation the packages: (when you have installed another version than 7.2 replace PHP packages with your version, when you doesnt now your PHP version type: `php -v` [it returns your PHP version]))*
 
  ```sh
-$ apt-get install php7.2-cli php7.2-curl
+$ apt-get install php7.2-cli php7.2-curl php7.2-mbstring
 $ apt-get install screen
 $ apt-get install screen
 ```
