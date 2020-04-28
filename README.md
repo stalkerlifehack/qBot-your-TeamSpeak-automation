@@ -3,7 +3,7 @@
  2. php7.2-cli
  3. php7.2-curl
  4. screen
- 5. apache2 (When banner is on the same vps/Dla baneru, ktory jest na tym samym vps)
+ 5. apache2 (Dla baneru, ktory jest na tym samym vps/*When banner is on the same vps*)
 
 # Packet installation/Instalacja pakietów
 Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pierwszy i drugi
