@@ -34,7 +34,7 @@ $ apt-get update && apt-get upgrade -y
     $ apt-get install php7.2
     ```
 3. Instalacja wymaganych pakietów: (jeżeli zainstalowałeś wersję inną niż 7.2 zastąp pakiety PHPa swoją wersją, jeśli jej nie znasz wprowadź polecenie: php -v [zwraca ono wersję PHPa])  
-  *(Instalation the packets: (when you have installed another version than 7.2 replace PHP packages with your version, when you doesnt now your PHP version type: `php -v` [it returns your PHP version]))*
+  *(Instalation the packages: (when you have installed another version than 7.2 replace PHP packages with your version, when you doesnt now your PHP version type: `php -v` [it returns your PHP version]))*
 
  ```sh
 $ apt-get install php7.2-cli php7.2-curl
@@ -42,6 +42,7 @@ $ apt-get install screen
 $ apt-get install screen
 ```
 Jeśli baner będzie na tym samym vps co bot:
+*(If banner will be on the same vps as the bot)*
 ```sh
 $ apt-get install apache2
 ```
@@ -56,10 +57,16 @@ $ cd qBot_v4.1
 $ chmod 0775 run 
 $ cd inc/configs
 ```
-Select config file/Wybór pliku konfuguracyjnego In english - EN, Po polski - PL
-```sh
-$ cp config.php.SAMPLE_EN config.php
-```
+Wybór pliku konfuguracyjnego 
+*(Select config file)*
+    - PL  
+    ```sh
+    $ cp config.php.SAMPLE_EN config.php
+    ```
+    - EN  
+    ```sh
+    $ cp config.php.SAMPLE_EN config.php
+    ```
 For banner on the same vps/Dla baneru na tym samym vps
 ```sh
 $ cd /home/qBot
