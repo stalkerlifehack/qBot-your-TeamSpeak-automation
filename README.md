@@ -57,16 +57,16 @@ $ cd qBot_v4.1
 $ chmod 0775 run 
 $ cd inc/configs
 ```
-Wybór pliku konfuguracyjnego 
-*(Select config file)*
+Wybór pliku konfuguracyjnego  
+*(Select config file)*  
     - PL  
     ```sh
     $ cp config.php.SAMPLE_EN config.php
-    ```
+    ```  
     - EN  
     ```sh
     $ cp config.php.SAMPLE_EN config.php
-    ```
+    ```  
 For banner on the same vps/Dla baneru na tym samym vps
 ```sh
 $ cd /home/qBot
