@@ -12,7 +12,7 @@ Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pier
     $ apt-get update && apt-get upgrade -y
     ```
 2. Dodanie repo PHP:
-        dla ubuntu:
+dla ubuntu:
     ```sh
     $ apt-get install python-software-properties
     $ add-apt-repository ppa:ondrej/php
