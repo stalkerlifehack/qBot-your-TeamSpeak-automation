@@ -39,7 +39,7 @@ Jeśli baner będzie na tym samym vps co bot:
 $ apt-get install apache2
 ```
  
-# Installation/Instalacja
+# Unpacking files/Wypakowywanie plików
 ```sh
 $ cd /home
 $ wget https://github.com/stalkerlifehack/qBot-your-TeamSpeak-automation/archive/master.zip
