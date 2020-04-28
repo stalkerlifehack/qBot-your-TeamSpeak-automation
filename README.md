@@ -13,21 +13,21 @@ $ apt-get update && apt-get upgrade -y
 ```
 2. Dodanie repo PHP:
         dla ubuntu:
-```sh
-$ apt-get install python-software-properties
-$ add-apt-repository ppa:ondrej/php
-$ apt-get update
-$ apt-get install php7.2
-```
+    ```sh
+    $ apt-get install python-software-properties
+    $ add-apt-repository ppa:ondrej/php
+    $ apt-get update
+    $ apt-get install php7.2
+    ```
 dla debian:
-```sh
-$ apt -y install lsb-release apt-transport-https ca-certificates
-$ wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
-$ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php7.2.list  //tutaj zamiast php7.2.list
-$ można zastąpić inną wersją, minimalnie 7.2 (np. php7.4.list)
-$ apt-get update
-$ apt-get install php7.2
-```
+    ```sh
+    $ apt -y install lsb-release apt-transport-https ca-certificates
+    $ wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+    $ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php7.2.list  //tutaj zamiast php7.2.list
+    $ można zastąpić inną wersją, minimalnie 7.2 (np. php7.4.list)
+    $ apt-get update
+    $ apt-get install php7.2
+    ```
 3.  Instalacja wymaganych pakietów: (jeżeli zainstalowałeś wersję inną niż 7.2 zastąp pakiety PHPa swoją wersją, jeśli jej nie znasz wprowadź polecenie: php -v [zwraca ono wersję PHPa])
 ```sh
 $ apt-get install php7.2-cli php7.2-curl
