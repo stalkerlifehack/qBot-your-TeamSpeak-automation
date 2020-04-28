@@ -7,7 +7,7 @@
 
 # Packet installation/Instalacja pakietów
 Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pierwszy i drugi:
-    1. Aktualizacja repozytoriów: 
+1. Aktualizacja repozytoriów: 
     ```sh
     $ apt-get update && apt-get upgrade -y
     ```
