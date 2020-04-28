@@ -67,7 +67,8 @@ $ cp config.php.SAMPLE_PL config.php
 ```sh
 $ cp config.php.SAMPLE_EN config.php
 ```  
-For banner on the same vps/Dla baneru na tym samym vps
+Dla baneru na tym samym vps  
+*(For banner on the same vps)*  
 ```sh
 $ cd /home/qBot
 $ mv banner /var/www/html/banner
