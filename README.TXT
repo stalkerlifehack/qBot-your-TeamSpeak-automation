@@ -11,7 +11,13 @@ Requirements/Wymagania
  4. cd qBot_v4.1
  5. chmod 0775 run 
  6. cd inc/configs
- 7. cp config.php.SAMPLE_EN config.php /  cp config.php.SAMPLE_PL config.php
+
+For english config file
+7. cp config.php.SAMPLE_EN config.php
+
+Dla polskiego pliku konfiguracyjnego
+7. cp config.php.SAMPLE_PL config.php
+
 
 Commands/Komendy
     ./run start
