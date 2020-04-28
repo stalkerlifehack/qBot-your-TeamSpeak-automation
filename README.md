@@ -13,9 +13,9 @@ Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pier
 ```sh
 $ apt-get update && apt-get upgrade -y
 ```
-2. Dodanie repo PHP
+2. Dodanie repo PHP  
   *(Add repo)* 
-    - dla ubuntu
+    - dla ubuntu  
      *(for ubuntu)* 
     ```sh
     $ apt-get install python-software-properties
@@ -23,7 +23,7 @@ $ apt-get update && apt-get upgrade -y
     $ apt-get update
     $ apt-get install php7.2
     ```
-    - dla debian
+    - dla debian  
      *(for debian)* 
     ```sh
     $ apt -y install lsb-release apt-transport-https ca-certificates
