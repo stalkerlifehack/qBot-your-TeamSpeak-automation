@@ -3,9 +3,11 @@
  2. php7.2-cli
  3. php7.2-curl
  4. screen
+ 5. apache2 (When banner is on the same vps/Dla baneru, ktory jest na tym samym vps)
  
 # Installation/Instalacja
 ```sh
+$ cd /home
 $ wget https://github.com/stalkerlifehack/qBot-your-TeamSpeak-automation/archive/master.zip
 $ unzip master.zip
 $ mv qBot-your-TeamSpeak-automation-master qBot_v4.1
@@ -21,6 +23,12 @@ Dla polskiego pliku konfiguracyjnego:
 ```sh
 $ cp config.php.SAMPLE_PL config.php
 ```
+For banner on the same vps/Dla baneru na tym samym vps
+```sh
+$ cd /home/qBot
+$ mv banner /var/www/htnl/banner
+```
+
 
 # Commands/Komendy
 ```sh
