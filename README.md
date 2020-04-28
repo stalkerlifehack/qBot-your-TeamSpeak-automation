@@ -6,20 +6,20 @@
  5. apache2 (When banner is on the same vps/Dla baneru, ktory jest na tym samym vps)
 
 # Packet installation/Instalacja pakietów
-Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pierwszy i drugi:
-1. Aktualizacja repozytoriów: 
+Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pierwszy i drugi
+Aktualizacja repozytoriów
     ```sh
     $ apt-get update && apt-get upgrade -y
     ```
-2. Dodanie repo PHP:
-dla ubuntu:
+Dodanie repo PHP
+dla ubuntu
     ```sh
     $ apt-get install python-software-properties
     $ add-apt-repository ppa:ondrej/php
     $ apt-get update
     $ apt-get install php7.2
     ```
-dla debian:
+dla debian
     ```sh
     $ apt -y install lsb-release apt-transport-https ca-certificates
     $ wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
@@ -28,7 +28,7 @@ dla debian:
     $ apt-get update
     $ apt-get install php7.2
     ```
-3.  Instalacja wymaganych pakietów: (jeżeli zainstalowałeś wersję inną niż 7.2 zastąp pakiety PHPa swoją wersją, jeśli jej nie znasz wprowadź polecenie: php -v [zwraca ono wersję PHPa])
+Instalacja wymaganych pakietów: (jeżeli zainstalowałeś wersję inną niż 7.2 zastąp pakiety PHPa swoją wersją, jeśli jej nie znasz wprowadź polecenie: php -v [zwraca ono wersję PHPa])
     ```sh
     $ apt-get install php7.2-cli php7.2-curl
     $ apt-get install screen
