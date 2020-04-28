@@ -8,9 +8,9 @@
 # Packet installation/Instalacja pakietów
 Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pierwszy i drugi:
 1. Aktualizacja repozytoriów: 
-```sh
-$ apt-get update && apt-get upgrade -y
-```
+    ```sh
+    $ apt-get update && apt-get upgrade -y
+    ```
 2. Dodanie repo PHP:
         dla ubuntu:
     ```sh
@@ -29,10 +29,10 @@ dla debian:
     $ apt-get install php7.2
     ```
 3.  Instalacja wymaganych pakietów: (jeżeli zainstalowałeś wersję inną niż 7.2 zastąp pakiety PHPa swoją wersją, jeśli jej nie znasz wprowadź polecenie: php -v [zwraca ono wersję PHPa])
-```sh
-$ apt-get install php7.2-cli php7.2-curl
-$ apt-get install screen
-```
+    ```sh
+    $ apt-get install php7.2-cli php7.2-curl
+    $ apt-get install screen
+    ```
 
  
 # Installation/Instalacja
