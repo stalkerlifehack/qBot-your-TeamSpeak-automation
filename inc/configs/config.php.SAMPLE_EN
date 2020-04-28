@@ -613,7 +613,7 @@ $config[2]['functions'] = [
       'publicParentChannels' => [1912],
       'channelAdminGroup' => 5,   # This group must have disabled this permission b_group_is_permanent
       'defaultChannelGroup' => 8,   # Deafult channel group
-    ]
+    ],
 
     /*
         function saving client left from server time

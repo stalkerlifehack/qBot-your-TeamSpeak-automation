@@ -619,7 +619,7 @@ $config[2]['functions'] = [
       'publicParentChannels' => [1912],
       'channelAdminGroup' => 5,   # Ta grupa koniecznie musi mieć usunięte pozwolenie b_group_is_permanent
       'defaultChannelGroup' => 8,   # Domyślna grupa kanału
-    ]
+    ],
 
     /*
         Funkcja zapisująca czas rozłączenia klienta z serwerem
