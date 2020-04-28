@@ -32,8 +32,12 @@ $ apt-get update && apt-get upgrade -y
  ```sh
 $ apt-get install php7.2-cli php7.2-curl
 $ apt-get install screen
+$ apt-get install screen
 ```
-
+Jeśli baner będzie na tym samym vps co bot:
+```sh
+$ apt-get install apache2
+```
  
 # Installation/Instalacja
 ```sh
@@ -69,8 +73,8 @@ $ ./run daemon
 ```
 
 # Help/Pomoc
-Telegram: https://telegram.me/Stal_ker (@Stal_ker)
-Forum: https://egcforum.pl/ (Stalker)
+- Telegram: https://telegram.me/Stal_ker (@Stal_ker)
+- Forum: https://egcforum.pl/ (Stalker)
 
 
 
