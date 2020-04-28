@@ -49,13 +49,9 @@ $ cd qBot_v4.1
 $ chmod 0775 run 
 $ cd inc/configs
 ```
-For english config file:
+Select config file/Wybór pliku konfuguracyjnego In english - EN, Po polski - PL
 ```sh
 $ cp config.php.SAMPLE_EN config.php
-```
-Dla polskiego pliku konfiguracyjnego:
-```sh
-$ cp config.php.SAMPLE_PL config.php
 ```
 For banner on the same vps/Dla baneru na tym samym vps
 ```sh
