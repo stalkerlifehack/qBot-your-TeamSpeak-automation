@@ -11,7 +11,7 @@ Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pier
     ```sh
     $ apt-get update && apt-get upgrade -y
     ```
-    2. Dodanie repo PHP:
+2. Dodanie repo PHP:
         dla ubuntu:
         ```sh
             $ apt-get install python-software-properties
@@ -27,7 +27,7 @@ Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pier
             $ apt-get update
             $ apt-get install php7.2
         ```
-    3.  Instalacja wymaganych pakietów: (jeżeli zainstalowałeś wersję inną niż 7.2 zastąp pakiety PHPa swoją wersją, jeśli jej nie znasz wprowadź polecenie: php -v [zwraca ono wersję PHPa])
+3.  Instalacja wymaganych pakietów: (jeżeli zainstalowałeś wersję inną niż 7.2 zastąp pakiety PHPa swoją wersją, jeśli jej nie znasz wprowadź polecenie: php -v [zwraca ono wersję PHPa])
     ```sh
         $ apt-get install php7.2-cli php7.2-curl
         $ apt-get install screen
