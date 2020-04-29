@@ -101,34 +101,7 @@ if ($ts->connect()) {
         } else {
             exit(ERR.$lang['core']['selectErr'][$config['lang']].PHP_EOL);
         }
-        switch($config[$instance['i']]['conn']['prefix']){
-          case 1:
-            $botName = "qBot".$config[$instance['i']]['conn']['botName'];
-            break;
-    
-          case 2:
-            $botName = "(qBot)".$config[$instance['i']]['conn']['botName'];
-            break;
-    
-          case 3:
-            $botName = "q-Bot".$config[$instance['i']]['conn']['botName'];
-            break;
-    
-          case 4:
-            $botName = "(q-Bot)".$config[$instance['i']]['conn']['botName'];
-            break;
-    
-          case 5:
-            $botName = $config[$instance['i']]['conn']['botName']."(qBot)";
-            break;
-    
-          case 6:
-            $botName = $config[$instance['i']]['conn']['botName']."(q-Bot)";
-            break;
-    
-          default:
-            exit(ERR.$lang['core']['prefix'][$config['lang']].PHP_EOL);
-        }
+        
         if (strlen($botName) > 30) {
             exit(ERR.$lang['core']['tooLong'][$config['lang']].PHP_EOL);
 

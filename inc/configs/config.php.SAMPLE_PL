@@ -35,20 +35,8 @@ $config[1]['conn'] = [
 
   'channelId' => 1,   # Id kanału, na którym bot ma siedzieć
 
-  'botName' => ' @ Guardian',   # Nazwa bota
+  'botName' => 'qBot @ Guardian',   # Nazwa bota
 
-  'prefix' => 1,
-    /*
-
-        Dostępne są prefixy od 1 do 6
-        1 - przed nazwą bota "qBot"
-        2 - przed nazwą bota "(qBot)"
-        3 - przed nazwą bota "q-Bot"
-        4 - przed nazwą bota "(q-Bot)"
-        5 - po nazwie bota "(qBot)"
-        6 - po nazwie bota "(q-Bot)"
-
-    */
 
 
 ];
@@ -67,20 +55,8 @@ $config[2]['conn'] = [
 
   'channelId' => 1,   
 
-  'botName' => ' @ Warden',  
+  'botName' => 'qBot @ Warden',  
 
-  'prefix' => 1,
-    /*
-
-        Dostępne są prefixy od 1 do 6
-        1 - przed nazwą bota "qBot"
-        2 - przed nazwą bota "(qBot)"
-        3 - przed nazwą bota "q-Bot"
-        4 - przed nazwą bota "(q-Bot)"
-        5 - po nazwie bota "(qBot)"
-        6 - po nazwie bota "(q-Bot)"
-
-    */
 
 
 ];
@@ -99,22 +75,10 @@ $config[3]['conn'] = [
 
   'channelId' => 1,   
 
-  'botName' => ' @ Updater',   
+  'botName' => 'qBot @ Updater',   
 
   'delay' => 400000,    # Czas jaki bot ma odczekać po wykonaniu wszystkich funkcji (w mikrosekundach) | 1 sekunda = 1'000'000 mikrosekund
 
-  'prefix' => 1,
-    /*
-
-        Dostępne są prefixy od 1 do 6
-        1 - przed nazwą bota "qBot"
-        2 - przed nazwą bota "(qBot)"
-        3 - przed nazwą bota "q-Bot"
-        4 - przed nazwą bota "(q-Bot)"
-        5 - po nazwie bota "(qBot)"
-        6 - po nazwie bota "(q-Bot)"
-
-    */
 
 
 ];
@@ -133,22 +97,10 @@ $config[4]['conn'] = [
 
   'channelId' => 1,   
 
-  'botName' => ' @ Checker',   
+  'botName' => 'qBot @ Checker',   
 
   'delay' => 400000,    # Czas jaki bot ma odczekać po wykonaniu wszystkich funkcji (w mikrosekundach) | 1 sekunda = 1'000'000 mikrosekund
 
-  'prefix' => 1,
-    /*
-
-        Dostępne są prefixy od 1 do 6
-        1 - przed nazwą bota "qBot"
-        2 - przed nazwą bota "(qBot)"
-        3 - przed nazwą bota "q-Bot"
-        4 - przed nazwą bota "(q-Bot)"
-        5 - po nazwie bota "(qBot)"
-        6 - po nazwie bota "(q-Bot)"
-
-    */
 
 
 ];
@@ -168,20 +120,8 @@ $config[5]['conn'] = [
 
   'channelId' => 1,   
 
-  'botName' => ' @ GuildChat',   # Nazwa bota
+  'botName' => 'qBot @ GuildChat',   # Nazwa bota
 
-  'prefix' => 1,
-    /*
-
-        Dostępne są prefixy od 1 do 6
-        1 - przed nazwą bota "qBot"
-        2 - przed nazwą bota "(qBot)"
-        3 - przed nazwą bota "q-Bot"
-        4 - przed nazwą bota "(q-Bot)"
-        5 - po nazwie bota "(qBot)"
-        6 - po nazwie bota "(q-Bot)"
-
-    */
 
 
 ];
