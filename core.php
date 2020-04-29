@@ -102,12 +102,12 @@ if ($ts->connect()) {
             exit(ERR.$lang['core']['selectErr'][$config['lang']].PHP_EOL);
         }
         
-        if (strlen($botName) > 30) {
+        if (strlen($config[$instance['i']]['conn']['botName']) > 30) {
             exit(ERR.$lang['core']['tooLong'][$config['lang']].PHP_EOL);
 
         }
-        if ($ts->setName($botName)) {
-            echo PREF.$lang['core']['changeName'][$config['lang']].ORAN.$botName.ENDC.PHP_EOL;
+        if ($ts->setName($config[$instance['i']]['conn']['botName'])) {
+            echo PREF.$lang['core']['changeName'][$config['lang']].ORAN.$config[$instance['i']]['conn']['botName'].ENDC.PHP_EOL;
         } else {
             echo WARN.$lang['core']['notName'][$config['lang']].PHP_EOL;
         }
