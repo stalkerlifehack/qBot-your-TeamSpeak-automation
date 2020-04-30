@@ -80,7 +80,6 @@ $ mv banner /var/www/html/banner
 ```sh
 $ ./run start
 $ ./run stop
-$ ./run restart 
 $ ./run daemon
 ```
 

@@ -110,7 +110,7 @@ then
 
 
 else
-redMessage 'Usage: run start/stop/restart/daemon'
+redMessage 'Usage: run start/stop/daemon'
 fi
 #Script created by Stalker
 #Copying is forbidden
