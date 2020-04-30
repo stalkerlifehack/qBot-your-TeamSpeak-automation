@@ -367,7 +367,7 @@ class qBot
     }
     public static function monthName($monthNumber)
     {
-        return $GLOBALS['lang']['monthNumber'][$GLOBALS['config']['lang']][$monthNumber];
+        return $GLOBALS['lang']['monthName'][$GLOBALS['config']['lang']][$monthNumber];
     }
 
     public static function weekName($weekNumber)
