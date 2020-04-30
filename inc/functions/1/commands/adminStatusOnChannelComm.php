@@ -42,7 +42,7 @@ class adminStatusOnChannelComm{
                     $data = json_decode(file_get_contents("cache/adminStatusOnChannel.json"), true);
                     $ts->sendMessage(1, $client['invokerid'], $lang['listOfEntries']);
                     foreach ($data as $channel => $group) {
-                        $ts->sendMessage(1, $client['invokerid'], str_replace(['[channel]', '[group]'], [$channel, $group], $lang['entryInfo']));
+                        $ts->sendMessage(1, $client['invokerid'], str_replace(['[channel]', '[dbid]'], [$channel, $group], $lang['entryInfo']));
                     }
 
                 } elseif ($command[4] == 'help') {
