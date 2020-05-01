@@ -4,7 +4,7 @@
  3. php7.2-curl
  4. php7.2-mbstring
  5. screen
- 6  php7.2-gd
+ 6.  php7.2-gd
  7. apache2 (Dla baneru, ktory jest na tym samym vps/*When banner is on the same vps*)
 
 
