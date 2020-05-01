@@ -4,7 +4,9 @@
  3. php7.2-curl
  4. php7.2-mbstring
  5. screen
- 6. apache2 (Dla baneru, ktory jest na tym samym vps/*When banner is on the same vps*)
+ 6  php7.2-gd
+ 7. apache2 (Dla baneru, ktory jest na tym samym vps/*When banner is on the same vps*)
+
 
 # Packet installation/Instalacja pakietów
 Jeżeli Twoja maszyna wirtualna posiada wgrany pakiet PHP7.2 >= pomiń krok pierwszy i drugi  
@@ -38,7 +40,7 @@ $ apt-get update && apt-get upgrade -y
   *(Instalation the packages: (when you have installed another version than 7.2 replace PHP packages with your version, when you doesnt now your PHP version type: `php -v` [it returns your PHP version]))*
 
  ```sh
-$ apt-get install php7.2-cli php7.2-curl php7.2-mbstring
+$ apt-get install php7.2-cli php7.2-curl php7.2-mbstring php7.2-gd
 $ apt-get install screen
 $ apt-get install screen
 ```
@@ -46,6 +48,8 @@ Jeśli baner będzie na tym samym vps co bot:
 *(If banner will be on the same vps as the bot)*
 ```sh
 $ apt-get install apache2
+$ sudo chgrp -R www-data /var/www/html
+$ sudo chmod -R 777 /var/www/html
 ```
  
 # Unpacking files/Wypakowywanie plików
