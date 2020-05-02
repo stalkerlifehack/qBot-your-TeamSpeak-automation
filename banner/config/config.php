@@ -21,7 +21,7 @@ $config = [
 
   # 0 -> wyłącza wyświetlanie błędów | -1 -> włącza wyświetlanie błędów
 
-  # 0 -> turn off error reporting | -1 -> turn on error reporting
+  # 0 -> turn off error reporting | 1 -> turn on error reporting
   'errors' => 1,
 
   # true / false

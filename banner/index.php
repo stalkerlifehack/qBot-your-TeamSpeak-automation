@@ -10,9 +10,15 @@
 
 date_default_timezone_set('Europe/Warsaw');
 
-error_reporting($config['errors']);
+
 require_once('lib/lib.php');
 require_once('config/config.php');
+
+if($config['errors']){
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+}
 
 if ($config['logs']) {
     if(!is_dir('logs')){
