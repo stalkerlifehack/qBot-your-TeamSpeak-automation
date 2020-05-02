@@ -11,6 +11,8 @@
 date_default_timezone_set('Europe/Warsaw');
 
 error_reporting($config['errors']);
+require_once('lib/lib.php');
+require_once('config/config.php');
 
 if ($config['logs']) {
     if(!is_dir('logs')){
@@ -19,8 +21,6 @@ if ($config['logs']) {
     ini_set('error_log', 'logs/error_'.date('Y-m-d').'log');
 }
 
-require_once('lib/lib.php');
-require_once('config/config.php');
 
 session_start();
 
