@@ -11,15 +11,16 @@
 
 class recordOnline
 {
-    public function start($ts, $config, $client, $lang)
+    public function start($ts, $config, $client)
     {
+      
         $server = $ts->serverInfo()['data'];
         $online = $server['virtualserver_clientsonline'] - $server['virtualserver_queryclientsonline'];
 
         $data = json_decode(file_get_contents('cache/recordOnline.json'), true);
 
         if ($data['best']['record'] < $online) {
-
+         
             $data['best']['record'] = $online;
             $data['best']['time'] = time();
 
@@ -55,8 +56,8 @@ class recordOnline
                   $i++;
                 }
                 $desc .= $config['footer'];
-
-                $ts->channelEdit($config['channelId'], array('channel_description' => $desc));
+                
+                $ts->channelEdit($config['channelId'], array('channel_description' => $desc, 'channel_name' => str_replace('[rekord]', $data['best']['record'], $config['channelName'])));
               }
             }
             else{
