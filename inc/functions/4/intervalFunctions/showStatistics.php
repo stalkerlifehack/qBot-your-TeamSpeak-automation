@@ -14,11 +14,17 @@ class showStatistics
     public function start($ts, $config)
     {
         $ids = [];
-        foreach ($ts->clientList('-groups')['data'] as $client) {
-            if (array_intersect($config['ignoredGroups'], explode(",", $client['client_servergroups']))) {
-                $ids[] = $client['client_database_id'];
+        foreach($config['ignoredGroups'] as $group){
+            foreach($ts->serverGroupClientList($group) as $client){
+                if(array_key_exists('0', $client)){
+                    foreach($client as $cl){
+                        
+                        $ids[] = $cl['cldbid'];
+                    }  
+                }
             }
         }
+
         $i = 0;
         foreach ($config['enabled'] as $function) {
             self::$function($ts, $config['cfg'][$function], $ids, $i, $config['results']);
