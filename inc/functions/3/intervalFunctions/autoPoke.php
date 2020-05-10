@@ -19,7 +19,7 @@ class autoPoke
                     if (!array_intersect(explode(",", $client['client_servergroups']), $cfg['adminGroups']) && !array_intersect(explode(",", $client['client_servergroups']), $cfg['ignoredGroups'])) {
                         if ($client['client_input_muted'] == 0 && $client['client_output_muted'] == 0 && $client['client_away'] == 0 && $client['client_input_hardware'] == 1) {
                             if (!array_intersect(explode(",", $client['client_servergroups']), $cfg['blockedGroups'])) {
-                                if (strlen(str_replace('[user]', "[url=client://0/".$client['client_unique_identifier']."]".$client['client_nickname']."[/url]", $lang['adminPoke'])) <= 100) {
+                                if (mb_strlen(str_replace('[user]', "[url=client://0/".$client['client_unique_identifier']."]".$client['client_nickname']."[/url]", $lang['adminPoke'])) <= 100) {
                                     foreach (qBot::getAdmins($cfg, $ts) as $admin) {
                                         $ts->clientPoke($admin, str_replace('[user]', "[url=client://0/".$client['client_unique_identifier']."]".$client['client_nickname']."[/url]", $lang['adminPoke']));
                                     } 
