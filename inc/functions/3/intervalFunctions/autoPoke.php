@@ -25,7 +25,7 @@ class autoPoke
                                     } 
                                 } else {
                                     foreach (qBot::getAdmins($cfg, $ts) as $admin) {
-                                        $ts->clientPoke($admin, str_replace('[user]', "[url=client://0/".$client['client_unique_identifier']."]".substr($client['client_nickname'], 0, 10)."...[/url]", $lang['adminPoke']));
+                                        $ts->clientPoke($admin, str_replace('[user]', "[url=client://0/".$client['client_unique_identifier']."]".mb_substr($client['client_nickname'], 0, 10)."...[/url]", $lang['adminPoke']));
                                     }
                                 }
                             } else {
