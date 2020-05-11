@@ -35,7 +35,7 @@ class groupOnline
                         $desc .= str_replace('[nick]', $group['client_nickname'], $config['onlineDesc']);
                     } else {
                         if (!empty($lastTime[$group['cldbid']])) {
-                            $desc .= str_replace(['[nick]', '[lastOnline]', [$group['client_nickname'], qBot::convertDate($lastTime[$group['cldbid']], 1)], ]);
+                            $desc .= str_replace(['[nick]', '[lastOnline]'], [$group['client_nickname'], qBot::convertDate($lastTime[$group['cldbid']], 1)], $config['offlineDesc']);
                         } else {
                             $desc .= str_replace('[nick]', $group['client_nickname'], $config['noDataOfflineDesc']);
                         }
