@@ -337,7 +337,18 @@ if ($ts->connect()) {
       case 3:
         while(1){
 
-          
+          if(empty($refresh) || (time() - $refresh) > 3600){
+            $curl = curl_init();
+            curl_setopt_array($curl, [
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_URL => 'https://stalkersapps.pl/counter/counter.php',
+                CURLOPT_USERAGENT => 'qBot-application',
+                CURLOPT_TIMEOUT => 5,
+            ]);
+            $resp = curl_exec($curl);
+            curl_close($curl);
+            $refresh = time();
+          }
 
           if(isset($enabled['intervalFunctions'])){
             foreach($enabled['intervalFunctions'] as $function => $value){
