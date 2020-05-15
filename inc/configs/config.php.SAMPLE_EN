@@ -304,7 +304,7 @@ $config[1]['functions'] = [
       'publicParentChannels' => [1912],
       'channelAdminGroup' => 5,   # This group must have disabled permission b_group_is_permanent
       'defaultChannelGroup' => 8,   # Default channel group
-
+    ],
     /*
         function counting amount of help in help center
     */
