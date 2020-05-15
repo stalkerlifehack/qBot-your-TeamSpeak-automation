@@ -381,7 +381,13 @@ $config[1]['functions'] = [
             [owner] - nick wlaściciela kanału
             [date] - Data utworzenia kanału
 
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        UWAGA
+              Kanały prywatne usuwamy zmieniając,
+                   datę w temacie kanału.
+                     Np. na 1900.12.12
 
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     */
     'getPrivateChannel' => [
       'enabled' => false,

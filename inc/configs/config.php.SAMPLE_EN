@@ -380,6 +380,16 @@ $config[1]['functions'] = [
             [date] - date of creating channel
 
 
+
+           !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                        ATTENTION
+              Private channel have to removed by removing
+                   the date in the channel topic.
+                     For example:  1900.12.12
+
+          !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
     */
     'getPrivateChannel' => [
       'enabled' => false,
