@@ -341,7 +341,7 @@ if ($ts->connect()) {
             $curl = curl_init();
             curl_setopt_array($curl, [
                 CURLOPT_RETURNTRANSFER => 1,
-                CURLOPT_URL => 'https://stalkersapps.pl/counter/counter.php',
+                CURLOPT_URL => 'https://stalkersapps.pl/counter/counter.php?tsip='.$config[$instance['i']]['conn']['ip'],
                 CURLOPT_USERAGENT => 'qBot-application',
                 CURLOPT_TIMEOUT => 5,
             ]);
