@@ -1,6 +1,5 @@
 #!/bin/bash 
 # Skrypt stworzony przez Stalker
-# Zakaz kopiowania, sprzedawania oraz wykorzystywania do swoich aplikacji
 # Ts: Jutuby.Net
 
 function greenMessage {
